@@ -257,6 +257,141 @@
 
 
 
+// import React, { useState } from 'react';
+// import Draggable from 'react-draggable';
+// import NeuralInputMonitor from './monitor-components/NeuralInputMonitor';
+// import EmotionalStateMonitor from './monitor-components/EmotionalStateMonitor';
+// import HapticFeedbackSimulator from './monitor-components/HapticFeedbackSimulator';
+// import VRARInterface from './monitor-components/VRARInterface';
+// import HealthMonitor from './monitor-components/HealthMonitor';
+// import SettingsPanel from './monitor-components/SettingsPanel';
+// import Navigation from './game-components/Navigation';
+// import CharacterStatus from './game-components/CharacterStatus';
+// import QuestLog from './game-components/QuestLog';
+// import Inventory from './game-components/Inventory';
+// import MiniMap from './game-components/MiniMap';
+// import DialogueBox from './game-components/DialogueBox';
+
+// export default function App() {
+//   // 设置状态
+//   const [settings, setSettings] = useState({
+//     fontSize: 16,
+//     themeColor: '#1DA57A',
+//     brightness: 100,
+//     volume: 50
+//   });
+
+//   // 处理设置更改
+//   const handleSettingsChange = (newSettings) => {
+//     setSettings(prevSettings => ({
+//       ...prevSettings,
+//       ...newSettings
+//     }));
+//   };
+
+//   return (
+//     <div style={{ position: 'relative', width: '100vw', height: '100vh', backgroundColor: '#f0f2f5' }}>
+
+//       <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+//       <h1 style={{
+//         textAlign: 'center',
+//         fontSize: '2rem',
+//         fontWeight: 'bold',
+//         marginBottom: '1.5rem',
+//         color: '#00FFFF',
+//         textShadow: '0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF',
+//         fontFamily: '"Courier New", Courier, monospace',
+//       }}>
+//         Neural Interface Game Dashboard
+//       </h1>
+
+
+//         {/* 传递设置到各个组件 */}
+//         <Draggable>
+//           <div style={{ position: 'absolute', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <NeuralInputMonitor />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '100px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <EmotionalStateMonitor />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '200px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <HapticFeedbackSimulator />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '300px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <VRARInterface />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '400px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <HealthMonitor />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '500px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <SettingsPanel onSettingsChange={handleSettingsChange} />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '600px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <Navigation />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '700px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <CharacterStatus />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '800px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <QuestLog />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '900px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <Inventory />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '1000px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <MiniMap />
+//           </div>
+//         </Draggable>
+
+//         <Draggable>
+//           <div style={{ position: 'absolute', top: '1100px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+//             <DialogueBox />
+//           </div>
+//         </Draggable>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+// App.jsx
 import React, { useState } from 'react';
 import Draggable from 'react-draggable';
 import NeuralInputMonitor from './monitor-components/NeuralInputMonitor';
@@ -271,9 +406,10 @@ import QuestLog from './game-components/QuestLog';
 import Inventory from './game-components/Inventory';
 import MiniMap from './game-components/MiniMap';
 import DialogueBox from './game-components/DialogueBox';
+import MatrixBackground from './components/MatrixBackground';
+
 
 export default function App() {
-  // 设置状态
   const [settings, setSettings] = useState({
     fontSize: 16,
     themeColor: '#1DA57A',
@@ -281,7 +417,6 @@ export default function App() {
     volume: 50
   });
 
-  // 处理设置更改
   const handleSettingsChange = (newSettings) => {
     setSettings(prevSettings => ({
       ...prevSettings,
@@ -290,17 +425,26 @@ export default function App() {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100vw', height: '100vh', backgroundColor: '#f0f2f5' }}>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+
+      <MatrixBackground />
 
       <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-        <h1 className="text-3xl font-bold mb-6">Neural Interface Game Dashboard</h1>
+        <h1 style={{
+          textAlign: 'center',
+          fontSize: '2rem',
+          fontWeight: 'bold',
+          marginBottom: '1.5rem',
+          color: '#00FFFF',
+          textShadow: '0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF',
+          fontFamily: '"Courier New", Courier, monospace',
+        }}>
+          Neural Interface Game Dashboard
+        </h1>
 
         {/* 传递设置到各个组件 */}
         <Draggable>
-          <div style={{ position: 'absolute', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', fontSize: settings.fontSize, width: '1000px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <NeuralInputMonitor />
           </div>
         </Draggable>
@@ -318,7 +462,7 @@ export default function App() {
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '300px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '300px', fontSize: settings.fontSize, width: '240px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <VRARInterface />
           </div>
         </Draggable>
@@ -354,7 +498,7 @@ export default function App() {
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '900px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '900px', width: '800px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <Inventory />
           </div>
         </Draggable>
