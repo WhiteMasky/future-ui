@@ -424,6 +424,7 @@ export default function App() {
     }));
   };
 
+
   return (
     <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
 
@@ -498,7 +499,7 @@ export default function App() {
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '900px', width: '800px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '900px', width: '600px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <Inventory />
           </div>
         </Draggable>
