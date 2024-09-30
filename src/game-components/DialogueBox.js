@@ -45,7 +45,7 @@ const DialogueBox = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-black">
+    <div className="flex justify-center items-center h-screen h-120 bg-black" style={{ height: '80px' }}>
       <Button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={showModal}>
         Open Dialogue
       </Button>

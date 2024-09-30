@@ -7,9 +7,10 @@ const items = [
 
 function Inventory() {
   return (
+      <div>
     <Row gutter={16}>
       {items.map((item, index) => (
-        <Col span={8} key={index}>
+        <Col span={12} key={index}>
           <Card
             title={item.name}
             className="transition-all duration-200"
@@ -40,6 +41,7 @@ function Inventory() {
         </Col>
       ))}
     </Row>
+      </div>
   );
 }
 
