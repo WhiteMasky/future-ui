@@ -23,3 +23,42 @@ const MatrixBackground = () => {
 };
 
 export default MatrixBackground;
+// import React from 'react';
+// import MatrixCodeRainComponent from 'react-matrix-code-rain';
+// import backgroundVideo from '../15708475-hd_1280_720_24fps.mp4';
+//
+// const MatrixVideoBackground = () => {
+//     return (
+//         <div className="fixed inset-0 w-full h-full overflow-hidden">
+//             {/* Video Background */}
+//             <video
+//                 className="absolute inset-0 w-full h-full object-cover"
+//                 autoPlay
+//                 loop
+//                 muted
+//                 playsInline
+//             >
+//                 <source src={`${process.env.PUBLIC_URL}/15708475-hd_1280_720_24fps.mp4`} type="video/mp4"/>
+//                 Your browser does not support the video tag.
+//             </video>
+//
+//             {/* Matrix Code Rain Effect */}
+//             <div className="absolute inset-0 z-10">
+//                 <MatrixCodeRainComponent
+//                     theColors={'#81ec72'}
+//                     stripCount={10}
+//                     timeout={100}
+//                     width={window.innerWidth}
+//                     height={window.innerHeight}
+//                 />
+//             </div>
+//
+//             {/* Content Overlay */}
+//             {/*<div className="relative z-20 h-full w-full bg-black bg-opacity-30 flex items-center justify-center">*/}
+//             {/*    <h1 className="text-4xl font-bold text-white">Your Content Here</h1>*/}
+//             {/*</div>*/}
+//         </div>
+//     );
+// };
+//
+// export default MatrixVideoBackground;

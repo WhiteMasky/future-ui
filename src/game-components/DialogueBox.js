@@ -22,12 +22,14 @@ const DialogueBox = () => {
     modalContent: {
       backgroundColor: '#000', 
       border: '2px solid #4CAF50', 
-      boxShadow: '0 0 15px rgba(76, 175, 80, 0.5)'
+      boxShadow: '0 0 15px rgba(76, 175, 80, 0.5)',
+      height:'80px',
     },
     modalHeader: {
       backgroundColor: '#000',
       borderBottom: '1px solid #4CAF50',
       color: '#4CAF50',
+      padding: '5px 16px'
     },
     modalTitle: {
       color: '#4CAF50',

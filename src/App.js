@@ -462,7 +462,7 @@ export default function App() {
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '300px', fontSize: settings.fontSize, width: '240px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute',right: '20px', top: '20px', fontSize: settings.fontSize, width: '240px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <VRARInterface />
           </div>
         </Draggable>
@@ -474,19 +474,19 @@ export default function App() {
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '500px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', right: '20px',top: '300px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <SettingsPanel onSettingsChange={handleSettingsChange} />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '600px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', right: '20px',top: '120px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <Navigation />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '700px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', right: '20px', top: '760px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <CharacterStatus />
           </div>
         </Draggable>
@@ -504,7 +504,7 @@ export default function App() {
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '1000px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '0px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
             <MiniMap />
           </div>
         </Draggable>
