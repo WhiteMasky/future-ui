@@ -445,73 +445,73 @@ export default function App() {
 
         {/* 传递设置到各个组件 */}
         <Draggable>
-          <div style={{ position: 'absolute', fontSize: settings.fontSize, width: '1000px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', fontSize: settings.fontSize, width: '800px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <NeuralInputMonitor />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '100px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '100px', fontSize: settings.fontSize, width: '300px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <EmotionalStateMonitor />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '200px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '200px', fontSize: settings.fontSize, width: '300px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <HapticFeedbackSimulator />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute',right: '20px', top: '20px', fontSize: settings.fontSize, width: '240px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute',right: '20px', top: '20px', fontSize: settings.fontSize, width: '240px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <VRARInterface />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '400px', fontSize: settings.fontSize, width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '400px', fontSize: settings.fontSize, width: '300px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <HealthMonitor />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', right: '20px',top: '300px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', right: '20px',top: '300px', width: '300px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <SettingsPanel onSettingsChange={handleSettingsChange} />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', right: '20px',top: '120px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', right: '20px',top: '120px', width: '300px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <Navigation />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', right: '20px', top: '760px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', right: '20px', top: '760px', width: '300px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <CharacterStatus />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '800px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '800px', width: '300px', backgroundColor: 'black', padding: '2px', borderRadius: '16px' }}>
             <QuestLog />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '900px', width: '600px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '900px', width: '600px', backgroundColor: 'black',padding: '8px', borderRadius: '16px' }}>
             <Inventory />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '0px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '0px', width: '300px', backgroundColor: 'black',padding: '2px', borderRadius: '16px' }}>
             <MiniMap />
           </div>
         </Draggable>
 
         <Draggable>
-          <div style={{ position: 'absolute', top: '1100px', width: '300px', backgroundColor: '#fff', padding: '10px', borderRadius: '10px' }}>
+          <div style={{ position: 'absolute', top: '1100px', width: '300px', backgroundColor: 'black', padding: '8px', borderRadius: '16px' }}>
             <DialogueBox />
           </div>
         </Draggable>
