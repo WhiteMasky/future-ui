@@ -17,7 +17,7 @@ const MatrixVideoBackground = () => {
             </video>
 
             <div className="relative z-20 h-full w-full bg-black bg-opacity-30 flex items-center justify-center opacity-55">
-                <h1 className="text-4xl font-bold text-white">Loading...</h1>
+                <h1 className="text-4xl font-bold text-white"></h1>
             </div>
         </div>
     );
