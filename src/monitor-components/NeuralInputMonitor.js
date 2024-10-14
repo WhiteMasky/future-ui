@@ -33,7 +33,7 @@ const NeuralInputMonitor = () => {
       <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '16px' }}>
         Neural Input Monitor
       </h2>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={140}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="5 5" stroke="#333" /> {/* 深色网格线 */}
           <XAxis dataKey="time" stroke="#00FFFF" /> {/* 霓虹蓝色 X 轴 */}
